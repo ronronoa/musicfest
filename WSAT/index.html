@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Music Festival</title>
+  <link rel="icon" href="/MUSIC FESTIVAL/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="/WSAT/images/logo3.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body class="bg-zinc-900 text-white scroll-smooth">
+  <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 backdrop-blur-md shadow-md">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold neon-text text-white">
+            MUSIC<span class="text-amber-500">FEST</span>
+          </a>
+          <a href="index.html">
+            <img src="/WSAT/images/logo3.png" alt="" class="pl-1 transition hover:-translate-y-1" />
+          </a>
+        </div>
+  
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Home</a>
+          <a href="#artists" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Artists</a>
+          <a href="#events" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Events</a>
+          <a href="contact.html" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Contact Us</a>
+          <button class="ml-4 bg-amber-500 hover:bg-amber-600 font-bold text-white px-4 py-2 rounded transition">
+            Get Tickets
+          </button>
+        </div>
+      </div>
+  
+      <div class="md:hidden mt-2">
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <label for="menu-toggle" class="cursor-pointer text-white absolute right-5 top-6">
+          <i class="fas fa-bars text-xl"></i>
+        </label>
+  
+        <div class="hidden peer-checked:flex flex-col mt-4 py-4 px-4 bg-slate-900 backdrop-blur rounded-lg space-y-3 animate-fade-in">
+          <a href="#" class="text-gray-300 hover:text-white py-2 transition">Home</a>
+          <a href="#artists" class="text-gray-300 hover:text-white py-2 transition">Artists</a>
+          <a href="#events" class="text-gray-300 hover:text-white py-2 transition">Events</a>
+          <a href="contact.html" class="text-gray-300 hover:text-white py-2 transition">Contact Us</a>
+          <button class="bg-amber-500 hover:bg-amber-600 py-2 rounded text-white font-semibold">
+            Get Tickets
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero min-h-screen bg-cover bg-center" style="background-image: url(/WSAT/images/1.png);" id="landing">
+    <div class="flex items-center justify-center h-full px-4 sm:px-6">
+      <div class="text-center max-w-lg">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-white">
+          MUSIC FEST: <span class="text-pink-400">UP FAIR</span>
+        </h1>
+        <p class="text-lg sm:text-xl mb-6 text-indigo-200">
+          Join us for an unforgettable night of music, lights, and energy.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#tickets" class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded text-white font-semibold flex items-center justify-center shadow-lg transition-all hover:scale-110 duration-200 ease">
+            <i class="fa-solid fa-ticket mr-2"></i>Get Tickets
+          </a>
+          <a href="#schedule" class="border border-cyan-500 hover:bg-cyan-600 ease-in-out duration-200- px-6 py-3 rounded text-white font-semibold flex items-center justify-center shadow-lg transition-all hover:scale-110 duration-200 ease">
+            <i class="bx bx-calendar-alt mr-2"></i>View Schedule
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-20 relative bg-gradient-to-br from-slate-900 to-purple-950">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div class="border border-white shadow-xl p-6 rounded-xl flex flex-col items-center text-center bg-gradient-to-br from-indigo-800 to-fuchsia-900">
+          <div class="w-12 h-12 rounded-full bg-neon-purple/20 flex items-center justify-center mb-4">
+            <i class="fas fa-music h-6 w-6 text-neon-purple"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Live Performances</h3>
+          <p class="text-gray-400">Experience electrifying live shows from top artists and emerging talent.</p>
+        </div>
+        
+        <div class="border border-white shadow-xl p-6 rounded-xl flex flex-col items-center text-center  bg-gradient-to-br from-indigo-800 to-fuchsia-900">
+          <div class="w-12 h-12 rounded-full bg-neon-purple/20 flex items-center justify-center mb-4">
+            <i class="fas fa-microphone h-6 w-6 text-neon-purple"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Premium Sound</h3>
+          <p class="text-gray-400">State-of-the-art sound systems delivering crystal clear audio at every venue.</p>
+        </div>
+        
+        <div class="border border-white shadow-xl p-6 rounded-xl flex flex-col items-center text-center  bg-gradient-to-br from-indigo-800 to-fuchsia-900">
+          <div class="w-12 h-12 rounded-full bg-neon-purple/20 flex items-center justify-center mb-4">
+            <i class="fas fa-ticket-alt h-6 w-6 text-neon-purple"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Easy Ticketing</h3>
+          <p class="text-gray-400">Secure your spot with our hassle-free online ticket booking system.</p>
+        </div>
+        
+        <div class="border border-white shadow-xl p-6 rounded-xl flex flex-col items-center text-center  bg-gradient-to-br from-indigo-800 to-fuchsia-900">
+          <div class="w-12 h-12 rounded-full bg-neon-purple/20 flex items-center justify-center mb-4">
+            <i class="fas fa-headphones h-6 w-6 text-neon-purple"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Exclusive Content</h3>
+          <p class="text-gray-400">Gain access to behind-the-scenes footage and artist interviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lineup" class="py-16 px-6 text-center bg-gray-800" id = "lineup">
+    <h2 class="text-3xl font-bold mb-8">Artist Lineup</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-5">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-white">
+        <img src="https://via.placeholder.com/400" alt="Image" class="rounded-md w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">The Frequencies</h3>
+          <p>Alternative rock to light up your soul.</p>
+          <button class="mt-4 bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded cursor-pointer">Listen Now</button>
+        </div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-white">
+        <img src="https://via.placeholder.com/400" alt="Image" class="rounded-md w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">The Frequencies</h3>
+          <p>Alternative rock to light up your soul.</p>
+          <button class="mt-4 bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded cursor-pointer">Listen Now</button>
+        </div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-white">
+        <img src="https://via.placeholder.com/400" alt="Image" class="rounded-md w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">The Frequencies</h3>
+          <p>Alternative rock to light up your soul.</p>
+          <button class="mt-4 bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded cursor-pointer">Listen Now</button>
+        </div>
+      </div>
+    </div>
+    <a href="lineups.html"><button class="btn btn-outline">See more artists</button></a>
+  </section>
+
+  <section id="tickets" class="py-16 px-6 bg-zinc-900" id = "tickets">
+    <h2 class="text-3xl font-bold text-center mb-8">Buy Tickets</h2>
+    <div class="max-w-sm mx-auto bg-gray-700 p-6 rounded-lg">
+      <form class="space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full px-4 py-2 rounded bg-gray-900 text-white border-0 shadow-md" required>
+        <input type="email" placeholder="Email Address" class="w-full px-4 py-2 rounded bg-gray-900 text-white border-0 shadow-md" required>
+        <select class="w-full px-4 py-2 rounded bg-gray-900 text-white border-0 shadow-md cursor-pointer" required>
+          <option value="">Select Ticket Type</option>
+          <option value="standard">Standard - ₱2,000</option>
+          <option value="vip">VIP - ₱5,000</option>
+        </select>
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded text-white font-semibold cursor-pointer">Purchase</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-sm bg-gray-900 border-t border-gray-700">
+    <p>&copy; 2025 MUSIC FESTIVAL. All rights reserved.</p>
+  </footer>
+</body>
+</html>
