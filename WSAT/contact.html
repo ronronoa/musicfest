@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link rel="icon" href="/WSAT/images/logo3.png">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-slate-900 min-h-screen flex items-center justify-center p-4">
+
+<body class="bg-gradient-to-b from-[#1e0034] to-[#12001d] min-h-screen flex items-center justify-center p-4">
   <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 backdrop-blur-md shadow-md">
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex items-center justify-between">
@@ -25,41 +28,50 @@
           </a>
         </div>
   
-        <!-- Desktop Navigation -->
+        <!-- desktop nav -->
         <div class="hidden md:flex items-center gap-6">
-          <a href="index.html" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Home</a>
-          <a href="#artists" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Artists</a>
-          <a href="#events" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Events</a>
-          <a href="contact.html" class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Contact Us</a>
-          <button class="ml-4 bg-amber-500 hover:bg-amber-600 font-bold text-white px-4 py-2 rounded transition">
-            Get Tickets
-          </button>
+          <a href="index.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Home</a>
+            <a href="about.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">About</a>
+          <a href="artist.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Artists</a>
+          <a href="schedule.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Events</a>
+          <a href="contact.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Contact Us</a>
+          <a href="ticket.html">
+            <button
+              class="ml-4 bg-amber-500 hover:bg-amber-600 font-bold text-white px-4 py-2 rounded transition cursor-pointer">
+              Get Tickets
+            </button>
+          </a>
         </div>
-      </div>
-  
-      <div class="md:hidden mt-2">
-        <input type="checkbox" id="menu-toggle" class="hidden peer" />
-        <label for="menu-toggle" class="cursor-pointer text-white absolute right-5 top-6">
-          <i class="fas fa-bars text-xl"></i>
-        </label>
-  
-        <div class="hidden peer-checked:flex flex-col mt-4 py-4 px-4 bg-slate-900 backdrop-blur rounded-lg space-y-3 animate-fade-in">
-          <a href="#" class="text-gray-300 hover:text-white py-2 transition">Home</a>
-          <a href="#artists" class="text-gray-300 hover:text-white py-2 transition">Artists</a>
-          <a href="#events" class="text-gray-300 hover:text-white py-2 transition">Events</a>
-          <a href="contact.html" class="text-gray-300 hover:text-white py-2 transition">Contact Us</a>
-          <button class="bg-amber-500 hover:bg-amber-600 py-2 rounded text-white font-semibold">
-            Get Tickets
-          </button>
+
+        <!-- mobile nav -->
+        <div class="md:hidden relative">
+          <i class="fas fa-bars text-xl cursor-pointer text-white absolute right-5 -top-2" id="mobilenav"></i>
+
+          <div
+            class="hidden flex-col mt-16 py-4 px-4 bg-slate-900 backdrop-blur rounded-lg space-y-4 animate-fade-in w-52 absolute right-4 z-50"
+            id="nav">
+            <a href="index.html" class="block text-gray-300 hover:text-white transition text-sm">Home</a>
+            <a href="artist.html" class="block text-gray-300 hover:text-white transition text-sm">Artists</a>
+            <a href="schedule.html" class="block text-gray-300 hover:text-white transition text-sm">Events</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white transition text-sm">Contact Us</a>
+            <a href="ticket.html">
+              <button class="w-full bg-amber-500 hover:bg-amber-600 py-2 rounded text-white font-semibold text-sm">
+                Get Tickets
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
   </nav>
 
-  <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-2xl p-6">
+  <div class="w-full max-w-md bg-[#1e0034] rounded-lg shadow-2xl p-6 mt-7">
     <div class="text-center mb-6">
       <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-300 mb-4">
-        <img src="/WSAT/images/envelope-icon.png" alt="" class="object-cover w-8">
+        <img src="/WSAT/images/envelope icon.png" alt="" class="object-cover w-8">
       </div>
       <h1 class="text-2xl font-bold text-white mb-2">Get in Touch</h1>
       <p class="text-white text-sm">
@@ -72,66 +84,50 @@
         <label for="name" class="block text-sm font-medium text-white mb-1">
           Name <span class="text-red-500">*</span>
         </label>
-        <input
-          id="name"
-          type="text"
-          placeholder="Your name"
+        <input id="name" type="text" placeholder="Your name"
           class="w-full border border-gray-300 text-white px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-          required
-        />
+          required />
       </div>
 
       <div class="mb-4">
         <label for="email" class="block text-sm font-medium text-white mb-1">
           Email <span class="text-red-500">*</span>
         </label>
-        <input
-          id="email"
-          type="email"
-          placeholder="your.email@example.com"
+        <input id="email" type="email" placeholder="your.email@example.com"
           class="w-full border border-gray-300 text-white px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-          required
-        />     
+          required />
       </div>
 
       <div class="mb-4">
         <label for="subject" class="block text-sm font-medium text-white mb-1">
           Subject <span class="text-red-500">*</span>
         </label>
-        <input
-          id="subject"
-          type="text"
-          placeholder="What is this regarding?"
+        <input id="subject" type="text" placeholder="What is this regarding?"
           class="w-full border border-gray-300 text-white px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-          required
-        />
+          required />
       </div>
 
       <div class="mb-4">
         <label for="message" class="block text-sm font-medium text-white mb-1">
           Message <span class="text-red-500">*</span>
         </label>
-        <textarea
-          id="message"
-          placeholder="Your message here..."
-          rows="5"
+        <textarea id="message" placeholder="Your message here..." rows="5"
           class="w-full border border-gray-300 text-white px-3 py-2 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-          required
-        ></textarea>
+          required></textarea>
       </div>
 
       <div class="mt-6">
-        <button 
-          type="submit" 
-          id="submitButton"
-          class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200 ease-in-out cursor-pointer"
-        >
+        <button type="submit" id="submitButton"
+          class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200 ease-in-out cursor-pointer">
           Send Message
         </button>
       </div>
     </form>
-      </div>
-    </div>
   </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

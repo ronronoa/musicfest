@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Music Festival</title>
+        <link rel="icon" href="/MUSIC FESTIVAL/images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/WSAT/images/logo3.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="output.css">
+        
+      </head>
+      <body class="bg-zinc-900 text-white scroll-smooth">
+        <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 backdrop-blur-md shadow-md">
+          <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold neon-text text-white">
+                  MUSIC<span class="text-amber-500">FEST</span>
+                </a>
+                <a href="index.html">
+                  <img src="/WSAT/images/logo3.png" alt="" class="pl-1 transition hover:-translate-y-1" />
+                </a>
+              </div>
+        
+              <!-- desktop nav -->
+              <div class="hidden md:flex items-center gap-6">
+                <a href="index.html"
+                  class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Home</a>
+                  <a href="about.html"
+                  class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">About</a>
+                <a href="artist.html"
+                  class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Artists</a>
+                <a href="schedule.html"
+                  class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Events</a>
+                <a href="contact.html"
+                  class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Contact Us</a>
+                <a href="ticket.html">
+                  <button
+                    class="ml-4 bg-amber-500 hover:bg-amber-600 font-bold text-white px-4 py-2 rounded transition cursor-pointer">
+                    Get Tickets
+                  </button>
+                </a>
+              </div>
+      
+              <!-- mobile nav -->
+              <div class="md:hidden relative">
+                <i class="fas fa-bars text-xl cursor-pointer text-white absolute right-5 -top-2" id="mobilenav"></i>
+      
+                <div
+                  class="hidden flex-col mt-16 py-4 px-4 bg-slate-900 backdrop-blur rounded-lg space-y-4 animate-fade-in w-52 absolute right-4 z-50"
+                  id="nav">
+                  <a href="index.html" class="block text-gray-300 hover:text-white transition text-sm">Home</a>
+                  <a href="artist.html" class="block text-gray-300 hover:text-white transition text-sm">Artists</a>
+                  <a href="schedule.html" class="block text-gray-300 hover:text-white transition text-sm">Events</a>
+                  <a href="contact.html" class="block text-gray-300 hover:text-white transition text-sm">Contact Us</a>
+                  <a href="ticket.html">
+                    <button class="w-full bg-amber-500 hover:bg-amber-600 py-2 rounded text-white font-semibold text-sm">
+                      Get Tickets
+                    </button>
+                  </a>
+                </div>
+              </div>
+        </nav>
+
+        <section class="bg-gradient-to-b from-[#1e0034] to-[#12001d] text-white py-16 px-6 min-h-screen">
+            <div class="max-w-7xl mx-auto">
+              <h2 class="text-4xl font-bold text-center mb-12 mt-10">🎶 Artist Lineup</h2>
+              
+              <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+                
+                <!-- Artist Card -->
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-4 shadow-lg">
+                  <img src="https://via.placeholder.com/300x200" alt="Rico Blanco" class="w-full h-48 object-cover rounded-xl mb-4">
+                  <h3 class="text-xl font-bold">Rico Blanco</h3>
+                  <p class="text-sm text-gray-300 mb-3">Alternative rock with heartfelt lyrics and strong vocals.</p>
+                  <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Listen Now</button>
+                </div>
+          
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-4 shadow-lg">
+                  <img src="https://via.placeholder.com/300x200" alt="Neon Pulse" class="w-full h-48 object-cover rounded-xl mb-4">
+                  <h3 class="text-xl font-bold">Neon Pulse</h3>
+                  <p class="text-sm text-gray-300 mb-3">Synth-pop vibes with a futuristic twist.</p>
+                  <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Listen Now</button>
+                </div>
+          
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-4 shadow-lg">
+                  <img src="https://via.placeholder.com/300x200" alt="The Frequencies" class="w-full h-48 object-cover rounded-xl mb-4">
+                  <h3 class="text-xl font-bold">The Frequencies</h3>
+                  <p class="text-sm text-gray-300 mb-3">Alternative rock to light up your soul.</p>
+                  <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Listen Now</button>
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          
+          <script src="script.js"></script>
+</body>
+</html>
