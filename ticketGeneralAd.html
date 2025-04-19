@@ -48,11 +48,14 @@
         </div>
 
         <!-- mobile nav -->
-        <div
+        <div class="md:hidden relative">
+          <i class="fas fa-bars text-xl cursor-pointer text-white absolute right-5 -top-2" id="mobilenav"></i>
+
+          <div
             class="hidden flex-col mt-8 py-4 px-4 bg-purple-950 backdrop-blur rounded-lg space-y-4 animate-fade-in w-52 absolute right-4 z-50"
             id="nav">
             <a href="index.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Home</a>
-            <a href="about.html" class="block text-red-300 hover:text-white transition text-md font-bold">About</a>
+            <a href="about.html" class="block text-gray-300 hover:text-white transition text-md font-bold">About</a>
             <a href="artist.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Artists</a>
             <a href="schedule.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Events</a>
             <a href="contact.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Contact Us</a>
