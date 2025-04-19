@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Music Festival</title>
+    <link rel="icon" href="/MUSIC FESTIVAL/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/WSAT/images/logo3.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class="">
+  <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 backdrop-blur-md shadow-md">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold neon-text text-white">
+            MUSIC<span class="text-amber-500">FEST</span>
+          </a>
+          <a href="index.html">
+            <img src="/WSAT/images/logo3.png" alt="" class="pl-1 transition hover:-translate-y-1" />
+          </a>
+        </div>
+  
+        <!-- desktop nav -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Home</a>
+            <a href="about.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">About</a>
+          <a href="artist.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Artists</a>
+          <a href="schedule.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Events</a>
+          <a href="contact.html"
+            class="text-gray-300 hover:-translate-y-1 hover:text-amber-400 font-bold transition">Contact Us</a>
+          <a href="plan.html">
+            <button
+              class="ml-4 bg-amber-500 hover:bg-amber-600 font-bold text-white px-4 py-2 rounded transition cursor-pointer">
+              Get Tickets
+            </button>
+          </a>
+        </div>
+
+        <!-- mobile nav -->
+        <div class="md:hidden relative">
+          <i class="fas fa-bars text-xl cursor-pointer text-white absolute right-5 -top-2" id="mobilenav"></i>
+
+          <div
+            class="hidden flex-col mt-8 py-4 px-4 bg-purple-950 backdrop-blur rounded-lg space-y-4 animate-fade-in w-52 absolute right-4 z-50"
+            id="nav">
+            <a href="index.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Home</a>
+            <a href="about.html" class="block text-red-300 hover:text-white transition text-md font-bold">About</a>
+            <a href="artist.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Artists</a>
+            <a href="schedule.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Events</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white transition text-md font-bold">Contact Us</a>
+            <a href="plan.html">
+              <button class="w-full bg-amber-500 hover:bg-amber-600 py-2 rounded text-black font-bold text-sm">
+                Get Tickets
+              </button>
+            </a>
+          </div>
+        </div>
+  </nav>
+  
+  <div class="bg-gradient-to-b from-[#1e0034] to-[#12001d] min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-[#1e0034] rounded-lg shadow-2xl p-6 border-0 mt-10">
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-300 mb-4">
+          <img src="/WSAT/images/envelope icon.png" alt="" class="object-cover w-8">
+        </div>
+        <h1 class="text-2xl font-bold text-white mb-2">Buy Tickets</h1>
+        <p class="text-white text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+  
+      <form id="contactForm" class="space-y-4">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-white mb-1">
+            Name <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Your name"
+            class="w-full border border-gray-300 text-white px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            required
+          />
+        </div>
+  
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-white mb-1">
+            Email <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="email"
+            type="email"
+            placeholder="your.email@example.com"
+            class="w-full border border-gray-300 text-white px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            required
+          />     
+        </div>
+  
+        <div class="mb-4">
+          <label for="ticket" class="block text-sm font-medium text-white mb-1">
+            Ticket Type <span class="text-red-500">*</span>
+            <h3 class="w-full border border-gray-300 text-amber-500 px-3 py-2 rounded-md">VIP</h3>
+        </div>
+  
+        <div class="mb-4">
+            <label for="ticket" class="block text-sm font-medium text-white mb-1">
+              Mode of Payment <span class="text-red-500">*</span>
+              <select class="w-full border border-gray-300 text-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                  <option value="" class="bg-black">Select Mode of Payment</option>
+                  <option value="" class="bg-black">Cash Payment</option>
+                  <option value="" class="bg-black">Online Payment</option>
+                </select> 
+          </div>
+  
+        <div class="mt-6">
+          <button 
+            type="submit" 
+            id="submitButton"
+            class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200 ease-in-out cursor-pointer"
+          >
+            Buy Now
+          </button>
+        </div>
+      </form>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black backdrop-blur-sm py-10 px-4">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <h2 class="title text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">MUSIC FEST</h2>
+            <p class="text-gray-400 text-sm">Your music journey starts here</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/maron.fajardo.9" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-purple-600 transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/ronronoa_/" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-purple-600 transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/ronronoa" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-purple-600 transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+          <p>&copy; 2025 MUSIC FEST. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
